@@ -1,1 +1,45 @@
+# --- Normalize text files to LF (Unix) for consistency across OSes ---
 * text=auto eol=lf
+
+# --- Explicitly declare text file types ---
+*.js     text eol=lf
+*.jsx    text eol=lf
+*.ts     text eol=lf
+*.tsx    text eol=lf
+*.json   text eol=lf
+*.css    text eol=lf
+*.scss   text eol=lf
+*.html   text eol=lf
+*.md     text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+*.cjs    text eol=lf
+*.mjs    text eol=lf
+*.gitattributes text eol=lf
+*.gitignore     text eol=lf
+
+# --- Treat common binary files properly (no line-ending conversion) ---
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.svg    binary
+*.ico    binary
+*.woff   binary
+*.woff2  binary
+*.ttf    binary
+*.eot    binary
+*.otf    binary
+*.pdf    binary
+*.zip    binary
+
+# --- Ignore coverage/lint cache files from normalization (if committed par erreur) ---
+.eslintcache binary
+coverage/**  binary
+
+# --- Mark lock files as text (but keep as-is) ---
+package-lock.json text
+
+# --- Optional: Keep CRLF line endings if editing on Windows ---
+# Uncomment this if you prefer CRLF on Windows:
+# * text=auto eol=crlf
