@@ -1,6 +1,7 @@
 import { createTheme } from '@vanilla-extract/css'
 import { vars } from '../theme.css'
 import { colors } from '../tokens/colors'
+import { spacing, radius, fonts } from '../tokens/dimensions'
 
 export const lightTheme = createTheme(vars, {
   color: {
@@ -10,22 +11,7 @@ export const lightTheme = createTheme(vars, {
     secondary: colors.pink,
     border: colors.lightGray,
   },
-  font: {
-    body: 'system-ui, sans-serif',
-    heading: 'Georgia, serif',
-    mono: 'Menlo, monospace',
-  },
-  spacing: {
-    xs: '4px',
-    sm: '8px',
-    md: '16px',
-    lg: '24px',
-    xl: '48px',
-  },
-  radius: {
-    sm: '4px',
-    md: '8px',
-    lg: '16px',
-    full: '9999px',
-  },
+  font: fonts,
+  spacing: spacing,
+  radius: radius,
 })

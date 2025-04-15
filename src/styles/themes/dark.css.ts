@@ -1,6 +1,7 @@
 import { createTheme } from '@vanilla-extract/css'
 import { vars } from '../theme.css'
 import { colors } from '../tokens/colors'
+import { fonts, spacing, radius } from '../tokens/dimensions'
 
 export const darkTheme = createTheme(vars, {
   color: {
@@ -10,7 +11,7 @@ export const darkTheme = createTheme(vars, {
     secondary: colors.magenta,
     border: colors.darkGray,
   },
-  font: vars.font,
-  spacing: vars.spacing,
-  radius: vars.radius,
+  font: fonts,
+  spacing: spacing,
+  radius: radius,
 })
