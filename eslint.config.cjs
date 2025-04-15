@@ -8,12 +8,13 @@ const prettierConfig = require('eslint-config-prettier')
 
 /** @type {import("eslint").Linter.FlatConfig[]} */
 module.exports = [
+  js.config.recommended,
   ...tseslint.config(
     {
       ignores: ['dist', 'build', 'node_modules'],
     },
     {
-      files: ['**/*.{ts,tsx}'],
+      files: ['**/*.{ts,tsx,js,jsx}'],
       languageOptions: {
         ecmaVersion: 2020,
         sourceType: 'module',
@@ -26,6 +27,7 @@ module.exports = [
         },
       },
       plugins: {
+        '@typescript-eslint': tseslint.plugin,
         'react-hooks': reactHooks,
         'react-refresh': reactRefresh,
         prettier,
