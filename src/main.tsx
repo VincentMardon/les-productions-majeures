@@ -1,9 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
 import App from './App.tsx'
 
-createRoot(document.getElementById('root')!).render(
+import './styles/reset.css'
+import { lightTheme } from './styles/themes/light.css.ts'
+const root = document.getElementById('root')!
+
+root.className = lightTheme
+createRoot(root).render(
   <StrictMode>
     <App />
   </StrictMode>,

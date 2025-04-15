@@ -1,4 +1,7 @@
 {
+  "compilerOptions": {
+    "types": ["@vanilla-extract/css"]
+  },
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
