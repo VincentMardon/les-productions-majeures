@@ -1,0 +1,11 @@
+node_modules
+dist
+build
+coverage
+
+*.svg
+*.min.js
+*.css.d.ts
+
+.vscode
+.env
