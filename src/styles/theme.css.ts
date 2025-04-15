@@ -1,4 +1,4 @@
-import { createThemeContract } from "@vanilla-extract/css"
+import { createThemeContract } from '@vanilla-extract/css'
 
 export const vars = createThemeContract({
   color: {
@@ -25,5 +25,5 @@ export const vars = createThemeContract({
     md: null,
     lg: null,
     full: null,
-  }
+  },
 })

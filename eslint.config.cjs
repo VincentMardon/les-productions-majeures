@@ -8,7 +8,6 @@ const prettierConfig = require('eslint-config-prettier')
 
 /** @type {import("eslint").Linter.FlatConfig[]} */
 module.exports = [
-  js.config.recommended,
   ...tseslint.config(
     {
       ignores: ['dist', 'build', 'node_modules'],

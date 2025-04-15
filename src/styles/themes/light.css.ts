@@ -1,6 +1,6 @@
-import { createTheme } from "@vanilla-extract/css"
-import { vars } from "../theme.css"
-import { colors } from "../tokens/colors"
+import { createTheme } from '@vanilla-extract/css'
+import { vars } from '../theme.css'
+import { colors } from '../tokens/colors'
 
 export const lightTheme = createTheme(vars, {
   color: {
@@ -26,6 +26,6 @@ export const lightTheme = createTheme(vars, {
     sm: '4px',
     md: '8px',
     lg: '16px',
-    full: '9999px'
-  }
+    full: '9999px',
+  },
 })

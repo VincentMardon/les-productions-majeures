@@ -4,9 +4,14 @@ import App from './App.tsx'
 
 import './styles/reset.css'
 import { lightTheme } from './styles/themes/light.css.ts'
-const root = document.getElementById('root')!
+import { darkTheme } from './styles/themes/dark.css.ts'
 
-root.className = lightTheme
+const root = document.getElementById('root')!
+// User Theme preferences detection
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+
+root.className = prefersDark ? darkTheme : lightTheme
+
 createRoot(root).render(
   <StrictMode>
     <App />
