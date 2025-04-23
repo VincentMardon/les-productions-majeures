@@ -4,6 +4,7 @@ node_modules/
 dist/
 out/
 build/
+.swc/
 
 # Yarn (Berry / Plug'n'Play)
 .yarn/*
