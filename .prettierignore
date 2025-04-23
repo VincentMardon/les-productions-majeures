@@ -1,0 +1,24 @@
+# Node modules and build
+node_modules/
+.next/
+dist/
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Configs or generated files
+coverage/
+*.log
+
+# Local env
+.env
+.DS_Store
+
+# System files or IDE
+.vscode/*
+!.vscode/settings.json
+.idea/

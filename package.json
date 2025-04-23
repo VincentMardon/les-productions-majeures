@@ -1,0 +1,15 @@
+{
+  "name": "les-productions-majeures",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "install:all": "yarn --cwd frontend install",
+    "dev": "yarn --cwd frontend dev",
+    "build": "yarn --cwd frontend build",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  }
+}
