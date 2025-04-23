@@ -1134,6 +1134,14 @@
     javascript-stringify "^2.0.1"
     mlly "^1.4.2"
 
+"@vanilla-extract/jest-transform@^1.1.14":
+  version "1.1.14"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/jest-transform/-/jest-transform-1.1.14.tgz#486d0450046089ba80a3f70a5d8f34bd1d30a5ec"
+  integrity sha512-R0ETIjq4ayKJdw+bWD5Lqif+mY/NY8ehpGzxKb+rhvv5GT2zyX7ArpUYKr0BQC2rLKx5DUl309Pnm++EjxSwdQ==
+  dependencies:
+    "@vanilla-extract/integration" "^8.0.1"
+    esbuild "npm:esbuild@>=0.17.6 <0.26.0"
+
 "@vanilla-extract/next-plugin@^2.4.10":
   version "2.4.10"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/next-plugin/-/next-plugin-2.4.10.tgz#124bdfeafbb9caeefa5c548403122d3eb5abb741"

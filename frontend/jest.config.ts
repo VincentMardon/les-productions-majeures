@@ -5,10 +5,13 @@ const createJestConfig = nextJest({
   dir: './',
 })
 
-const config: Config = {
+const customJestConfig: Config = {
   coverageProvider: 'v8',
   testEnvironment: 'jsdom',
   roots: ['<rootDir>/src/tests'],
+  transform: {
+    '^.+\\.css\\.ts$': '@vanilla-extract/jest-transform',
+  },
 }
 
-export default createJestConfig(config)
+export default createJestConfig(customJestConfig)

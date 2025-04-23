@@ -18,7 +18,6 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 
   useEffect(() => {
     const classList = document.body.classList
-
     classList.remove(lightTheme, darkTheme)
 
     if (theme === 'light') {
