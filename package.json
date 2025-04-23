@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "description": "Plateforme artistique Les Productions Majeures",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VincentMardon/les-productions-majeures.git"
+  },
   "scripts": {
     "install:all": "yarn --cwd frontend install",
     "dev": "yarn --cwd frontend dev",
