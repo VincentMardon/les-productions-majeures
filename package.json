@@ -9,17 +9,22 @@
     "url": "https://github.com/VincentMardon/les-productions-majeures.git"
   },
   "scripts": {
-    "install:all": "yarn --cwd frontend install",
-    "dev": "yarn --cwd frontend dev",
-    "build": "yarn --cwd frontend build",
+    "install:frontend": "yarn --cwd frontend install",
+    "install:backend": "cd backend && poetry install",
+    "install:all": "yarn install:frontend && yarn install:backend",
+    "dev:frontend": "yarn --cwd frontend dev",
+    "dev:backend": "cd backend && poetry run python manage.py runserver",
+    "dev": "concurrently \"yarn dev:frontend\" \"yarn dev:backend\"",
+    "build:frontend": "yarn --cwd frontend build",
     "format": "prettier --write .",
     "test:frontend": "yarn --cwd frontend jest",
     "test:frontend:watch": "yarn test:frontend --watch",
     "test:frontend:coverage": "yarn test:frontend --coverage",
-    "test:backend": "echo \"Backend tests will go here soon\"",
+    "test:backend": "cd backend && python manage.py test",
     "test:all": "yarn test:frontend && yarn test:backend"
   },
   "devDependencies": {
+    "concurrently": "^9.1.2",
     "prettier": "^3.5.3"
   }
 }

@@ -13,6 +13,7 @@ __pycache__/
 # Configs or generated files
 coverage/
 *.log
+package.json
 
 # Local env
 .env
