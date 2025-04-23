@@ -36,5 +36,11 @@ describe('ToggleThemeButton', () => {
     await waitFor(() => {
       expect(document.body.classList.value).toBe('darkTheme')
     })
+
+    fireEvent.click(button)
+
+    await waitFor(() => {
+      expect(document.body.classList.contains('darkTheme')).toBe(false)
+    })
   })
 })
