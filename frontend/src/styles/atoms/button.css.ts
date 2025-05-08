@@ -8,7 +8,7 @@ export const button = style({
   margin: '10px',
   fontSize: '20px',
   color: colors.white,
-  backgroundColor: '#1E90FF',
+  backgroundColor: colors.dodgerBlue,
   borderRadius: '5px',
   border: 'none',
   cursor: 'pointer',
